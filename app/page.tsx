@@ -1,28 +1,34 @@
-'use client';
-
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
 
-export default function Page() {
+export default function Home() {
   return (
     <main>
-      <div className="flex min-h-screen items-center justify-center">
-        <TypeAnimation
-          sequence={[
-            `Hello, I'm Vitaliy`,
-          ]}
-          speed={50}
-          style={{ whiteSpace: 'pre-line', fontSize: '2em', display: 'inline-block' }}
-          repeat={0}
-        />
+
+      <div className="w-screen h-screen flex flex-col sm:flex-row items-center justify-center border-2 text-white text-2xl space-y-2">
+        <div className="flex flex-col mb-2">
+          <Image
+            src="/profile-pic2.png"
+            alt="Vitaliy's Profile Image"
+            width={150}
+            height={150}
+            className="rounded-full" 
+          />
+        </div>
+        <div className="flex flex-col">
+          <p className="text-center sm:text-left text-2xl md:text-4xl lg:text-6xl">
+            Hello, I'm Vitaliy
+          </p>
+          <p className="text-center sm:text-left text-base md:text-lg lg:text-xl xl:text-2xl text-wrap">
+            The one-man tech team poised to make your next great idea a reality.
+          </p>
+        </div>
       </div>
+      <div className="w-screen h-screen flex items-center justify-center border-2 text-white text-2xl">
+        The one-man tech team poised to make your next great idea a reality.
+      </div>
+
+      
+      
     </main>
   );
 }
-
-
-{/* 
-          <p className="text-xl text-neutral-200">
-            The one-man tech team poised to make your next great idea a reality.
-          </p>
-          Remotely available UTC−8 to UTC+1. rafael@caferati.me_ */}

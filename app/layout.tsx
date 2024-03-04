@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
+import Navigation from "./ui/navigation";
+import Particles from "./ui/particles";
+
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +24,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(
-        "antialiased",
-        "bg-gray-900",
-        "text-neutral-100",
+        "antialiased bg-black text-neutral-100",
         inter.className
       )}>
+        <Navigation />
         {children}
+        <Particles
+          className="fixed inset-0 -z-10 animate-fade-in"
+          quantity={150}
+        />
       </body>
     </html>
   );
