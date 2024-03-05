@@ -17,7 +17,7 @@ export default function Contact() {
         <div className="flex flex-row">
           <div className="flex flex-col">
             <div className="text-center sm:text-left text-2xl md:text-4xl mb-6">
-              Let's make something great together!
+              Let&apos;s make something great together!
             </div>
             <div className="leading-loose md:leading-normal 
               text-base md:text-lg lg:text-xl xl:text-2xl text-pretty text-zinc-300">
@@ -53,7 +53,7 @@ export default function Contact() {
         <div className="flex flex-col sm:flex-row">
           <div className="flex basis-1/2  mb-2">
             <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-pretty text-zinc-300">
-              I'm located in Lisbon, Portugal. My working hours are
+              I&apos;m located in Lisbon, Portugal. My working hours are
               extremely flexible, having solid intersection with all the
               time zones in the U.S. and Europe.
             </p>

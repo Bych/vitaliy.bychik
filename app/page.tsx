@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col">
           <p className="text-center sm:text-left text-2xl md:text-4xl lg:text-6xl">
-            Hello, I'm Vitaliy
+            Hello, I&apos;m Vitaliy
           </p>
           <p className="text-center sm:text-left text-base md:text-lg lg:text-xl xl:text-2xl text-wrap">
             The one-man tech team poised to make your next great idea a reality.
